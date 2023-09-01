@@ -1,6 +1,4 @@
-const { Client, GatewayIntentBits} = require('discord.js')
-require('dotenv/config')
-
+const config = require('./config.json');
 
 const client = new Client({
     intents: [
@@ -194,7 +192,4 @@ client.on('messageCreate',  message => {
     }
 })//ily（love you too！）
 
-
-
-
-client.login(process.env.TOKEN)
+client.login(config.token)
