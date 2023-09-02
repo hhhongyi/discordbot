@@ -206,5 +206,11 @@ client.on('messageCreate',  message => {
     }
 })//i love yyq（love you！）
 
+client.on('messageCreate',  message => {
+    if (message.content ==='滚滚'){
+        message.reply('I am here')
+    }
+})//滚滚（I am here！）
+
 
 client.login(process.env.TOKEN)
