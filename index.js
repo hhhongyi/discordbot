@@ -212,5 +212,11 @@ client.on('messageCreate',  message => {
     }
 })//滚滚（I am here！）
 
+client.on('messageCreate',  message => {
+    if (message.content ==='尊嘟假嘟'){
+        message.reply('尊嘟尊嘟！')
+    }
+})//尊嘟假嘟（尊嘟尊嘟！）
+
 
 client.login(process.env.TOKEN)

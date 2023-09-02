@@ -1,5 +1,5 @@
-const { SlashCommandBuilder,EmbedBuilder} = require('discord.js')
-const weather = require('weather.js')
+const { SlashCommandBuilder,EmbedBuilder} = require('discord.js');
+require('dotenv/config')
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -53,3 +53,5 @@ module.exports = {
         })
     }
 }
+
+client.login(process.env.TOKEN)
