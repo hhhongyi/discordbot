@@ -194,8 +194,17 @@ client.on('messageCreate',  message => {
     }
 })//ily（love you too！）
  
-//Hello
+client.on('messageCreate',  message => {
+    if (message.content ==='i love gyd'){
+        message.reply('love you！')
+    }
+})//i love gyd（love you！）
 
+client.on('messageCreate',  message => {
+    if (message.content ==='i love yyq'){
+        message.reply('love you！')
+    }
+})//i love yyq（love you！）
 
 
 client.login(process.env.TOKEN)
